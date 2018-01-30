@@ -14,6 +14,9 @@ pygame.init()
 
 #Images
 guinea = pygame.image.load('guinea.png')
+hay = pygame.image.load('hay.png')
+bedding = pygame.image.load('bedding.png')
+hay2 = pygame.image.load('hay2.png')
 
 # Window
 SIZE = (800, 600)
@@ -132,15 +135,15 @@ while not done:
     # Drawing code
     ''' sky '''
     if lightning_timer > 0:
-        screen.fill(YELLOW)
+        screen.blit(hay2, (0, 0))
     else:
-        screen.fill(GRAY)
+        screen.blit(hay, (0, 0))
 
     ''' sun '''
-    #pygame.draw.ellipse(screen, YELLOW, [575, 75, 100, 100])
+    pygame.draw.ellipse(screen, YELLOW, [575, 75, 100, 100])
 
     ''' grass '''
-    pygame.draw.rect(screen, GREEN, [0, 400, 800, 200])
+    screen.blit(bedding,[0, 400, 800, 200])
 
     ''' fence '''
     y = 380
