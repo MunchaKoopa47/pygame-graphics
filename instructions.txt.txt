@@ -1,0 +1,5 @@
+A - Move Guinea Left
+D - Move Guinea Right
+Left Shift - Play whistling noise
+Spacebar - Change rain color
+Right Shift - Change guinea background face
